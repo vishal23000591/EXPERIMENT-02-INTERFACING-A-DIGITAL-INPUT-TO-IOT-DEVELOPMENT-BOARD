@@ -18,6 +18,7 @@ To Interface a Digital Input (IR pair ) to ARM IOT development board and write a
 - STM32 CUBE IDE
 - ARM IOT development board
 - STM programmer tool
+- IR Pair Sensor
 
 ## Theory
 
@@ -27,7 +28,14 @@ One such microcontroller is the STM32WLE5JC, which is part of the STM32 family a
 
 The STM32WLE5JC is known for its ultra-low power consumption, making it perfect for battery-operated IoT devices such as smart agriculture sensors, environmental monitoring systems, industrial automation, and asset tracking. It supports multiple communication interfaces, including I2C, SPI, and UART, allowing seamless integration with various sensors and peripherals. Additionally, it features built-in security capabilities such as AES 256-bit encryption and a True Random Number Generator (TRNG) for secure data transmission.
 
-With its power-efficient design, built-in LoRaWAN support, and flexible communication options, the STM32WLE5JC is an excellent choice for developers looking to build long-range, low-power IoT applications. It is fully compatible with STM32CubeIDE and LoRaWAN middleware, making development and deployment easier for engineers and students alike.
+With its power-efficient design, built-in LoRaWAN support, and flexible communication options, the STM32WLE5JC is an excellent choice for developers looking to build long-range, low-power IoT applications. It is fully compatible with STM32CubeIDE and LoRaWAN middleware, making development and deployment easier for engineers and learners alike.
+
+##IR PAIR
+
+![image](https://github.com/user-attachments/assets/08db7d97-3b9b-4d6a-b988-5f255053b462)
+
+IR technology is used in a wide range of wireless applications which includes remote controls and sensing. The infrared part in the electromagnetic spectrum can be separated into three main regions: near IR, mid-IR & far IR. The wavelengths of these three regions vary based on the application. For the near IR region, the wavelength ranges from 700 nm- 1400 nm, the wavelength of the mid-IR region ranges from 1400 nm – 3000 nm & finally for the far IR region, the wavelength ranges from 3000 nm – 1 mm.The near IR region is used on fiber optic & IR sensors, the mid-IR region is used for heat sensing and the far IR region is used in thermal imaging. The range of frequency for IR is maximum as compared to microwave and minimum than visible light.
+
 ## Procedure
 
 1. Click on STM 32 CUBE IDE, the following screen will appear
@@ -69,17 +77,17 @@ With its power-efficient design, built-in LoRaWAN support, and flexible communic
 
 ![image](https://user-images.githubusercontent.com/36288975/226189577-c61cc1eb-3990-4968-8aa6-aefffc766b70.png)
 
-11. Open STM32Cube Programmer
+11. connect the iot board to power supply and usb
+
+12. After connecting open the STM cube programmer
 
 ![Screenshot 2025-03-11 135208](https://github.com/user-attachments/assets/bb67ab6b-81a5-450c-b170-4276a9b87ef2)
 
 
+13. Connect the STM board through the COM port, then upload the corresponding project ELF file/Hex file or Bin file in Erasing & Programming Window,while ensuring the board is in flash mode, and click on 'Start Program.
+    ![image](https://github.com/user-attachments/assets/9383531d-8204-4697-9321-55afb6abee2e)
 
-12. Connect the STM board through the COM port, then upload the corresponding project ELF file while ensuring the board is in flash mode, and click on 'Start Program.' After the file download is complete, switch your board to run mode and press the reset button to see the output
-
-
-
-
+14.  After the file download is complete, switch your board to run mode and press the reset button to see the output
 
 
 ## STM 32 CUBE PROGRAM
